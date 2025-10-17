@@ -1,0 +1,24 @@
+import matplotlib.pyplot as plt
+months=['jan','feb','mar','apr']
+sales=[100,200,300,400]
+profit=[25,30,40,100]
+plt.figure(figsize=(14,4))
+#line plot 
+plt.subplot(1,3,1)
+plt.plot(months,sales,color='blue',marker='o')
+plt.title("Monthly sales Trend")
+plt.xlabel("Month")
+plt.ylabel("Sales")
+#scatter plot 
+plt.scatter(months,profit,color='green',marker='o')
+plt.title("Monthly profit comparision")
+plt.xlabel("Months")
+plt.ylabel("Profit")
+#plt.subplot(1, 3, 3)
+plt.bar(months, profit, color='orange')
+plt.title("Monthly Profit Comparison")
+plt.xlabel("Month")
+plt.ylabel("Profit")
+# Adjust layout and show p
+plt.tight_layout()
+plt.show()
